@@ -1,0 +1,20 @@
+[01] sudo nvim /etc/bash.bashrc
+    To make aliases for all folders and all users
+
+
+[PREFERENCES]
+alias v='nvim'
+alias update='sudo pacman -Syu'
+alias install='sudo pacman -S'
+alias remove='sudo pacman -Rns'
+alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
+alias sl='systemctl suspend'
+alias sd='shutdown now'
+alias rb='reboot'
+alias q='exit'
+alias l='ls -la'
+alias pp='powerprofilesctl'
+alias ppp='powerprofilesctl set performance'
+alias ppb='powerprofilesctl set balanced'
+alias pps='powerprofilesctl set power-saver'
+alias aliases='sudo nvim /etc/bash.bashrc'

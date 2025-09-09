@@ -1,0 +1,195 @@
+[01] h
+    left arrow
+
+[02] j
+    down arrow
+
+[03] k
+    up arrow
+
+[04] l
+    right arrow
+
+[05] i
+    insert mode (start editing from left of cursor)
+
+[06] I
+    insert mode (start editing from start of line)
+
+[07] a
+    append
+    insert mode (start editing from right of cursor)
+
+[08] A
+    insert mode (start editing from end of line)
+
+[09] w
+    move right one word at a time
+
+[10] b
+    move left one word at a time
+
+[11] e
+    move to the end of the word
+    if pressed repeatedly, moves right one word at a time (like w) but at end of word
+
+[12] $
+    move to the end of time
+
+[13] 0
+    move to the 0th position of line
+
+[14] ^
+    move to start of line (Non-White space)
+
+[15] f[c]
+    to find a word using a character (forward direction)
+
+[16] F[c]
+    to find a word using a character (backward direction)
+
+[17] ;
+    repeats the last find command
+    (forward direction) -> if f is pressed
+    (backward direction) -> if F is pressed
+
+[18] ,
+    repeats the last find command
+    (backward direction) -> if f is pressed
+    (forward direction) -> if F is pressed
+
+[19] 3w
+    move 3 words (start of word)
+
+[20] 4e
+    move 4 words (end of word)
+
+[21] ==
+    to fix indentation mismatch
+
+[22] gg
+    move to the start of the document/file
+
+[23] G
+    move to the end of the document/file
+
+[24] zz
+    move the cursor to the visual center (without changing the line)
+
+
+----- Deletion actually cuts it -----
+[25] d
+    delete the selected text
+
+[26] dd 
+    delete the entire line
+
+[27] dw
+    delete a word
+
+[28] u
+    undo the changes
+
+[29] yw
+    yank (copy) a word
+
+[30] y
+    yank (copy) the selected text
+
+[31] yy
+    yank (copy) the entire line
+
+[31] p
+    paste after the cursor
+
+[32] P
+    paste before the cursor
+
+[33] v
+    enter visual mode to select text
+
+[34] V
+    enter visual mode and select the entire line
+
+[35] R
+    replace the text or overwrite
+
+[36] r
+    replace the character
+
+[37] ctrl + r
+    redo
+
+[38] %
+    it will take cursor to matching counterpart
+    if you click % on {, it will take you to } and vice versa
+
+[39] dip
+    delete in paragraph
+
+[40] yip
+    yank in paragraph
+
+[41] diw
+    delete in word
+    press di" to delete inside "Hello I am Kishore"
+
+[42] yiw
+    yank in word
+
+[43] ciw
+    change in word
+    if w=[(]
+    clears everything inside () and enters insert mode inside ()
+
+[44] .
+    when pressing di" if we press . again it will delete in next "" and continue
+
+[45] o
+    start a new line and enter insert mode
+
+[46] V6k
+    select the current line and above 6 lines
+
+[47] 8k
+    move cursor 8 lines above
+
+[48] 3j
+    move cursor 3 lines below
+
+[49] 8l
+    move 8 characters right
+
+[50] 5h
+    move 5 characters left
+
+[51] /
+    to find a word forward
+    hit enter and press n to move next and N for previous
+
+[52] ?
+    to find a word backward
+    hit enter and press n to move next and N for previous
+
+[53] IMPORTANT
+    to select and rename a variable named "temp"
+    first search for it (/temp) and hit enter
+    the on a single word click shift+r then rename it
+    after that hit n and click .
+    repeat it to rename the variable in all locations
+
+[54] :%s/old/new
+    alternate way to rename a variable at different locations
+    this will rename that variable "old" in the entire file
+
+[55] ctrl + v
+    to select characters vertically across lines
+
+[56] ctrl + s
+    to save the file
+
+[57] ctrl + /
+    to open terminal inside neovim
+
+[58] shift+zz
+    to save and exit neovim

@@ -1,0 +1,26 @@
+[01] cat /sys/power/mem_sleep
+    This will show the available sleep states.
+    If you see "s3" is listed, it indicates that S3 is supported.
+    If S3 is supported then power consumption in sleep state is minimal.
+
+[02] cat /proc/acpi/wakeup
+    This will show devices that can wake up the system from sleep
+    and may provide insights into the current sleep state.
+
+[03] systemctl suspend
+    This will make the laptop sleep.
+
+[04] shutdown now
+    This will shutdown the system.
+
+[05] reboot
+    This will restart the system.
+
+[06] cat /sys/class/power_supply/BAT0/uevent
+    To know the battery details.
+
+[07] powerprofilesctl
+    To know the current power profile i.e.
+    1)performance       {powerprofilesctl set performance}
+    2)balanced          {powerprofilesctl set balanced}
+    3)power-saver       {powerprofilesctl set power-saver}

@@ -1,0 +1,2 @@
+[01] tree folder_name
+    to see all files and folders present in this directory.
